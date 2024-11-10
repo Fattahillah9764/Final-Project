@@ -1,0 +1,225 @@
+.button {
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: orange;
+  }
+  .button1 {
+    color: white;
+  }
+  .carousel-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('"C:\Users\fatahillah\Documents\Fattahillah\Toyota_XH8_Javascript\Day14_7Nov24\Images\tmmin1.jpg"');
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px); /* Efek blur pada background */
+    z-index: -1; /* Memastikan background di belakang carousel */
+}
+
+/* Efek bayangan pada carousel */
+.carousel-inner {
+    position: relative;
+    overflow: hidden; /* Memastikan gambar di dalam carousel tidak meluas keluar */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+}
+
+.highlight-text {
+    background-color: orange;  /* Menambahkan background berwarna kuning */
+    padding: 5px;              /* Menambahkan padding sekitar teks */
+    display: inline-flexbox;     /* Membuat background hanya selebar teks, mengikuti ukuran konten */
+    line-height: 1.2;          /* Mengatur ketinggian baris jika teks terpotong */
+}
+
+.ellipse-background {
+  width: 100px; /* Sesuaikan lebar */
+  height: 50px; /* Sesuaikan tinggi */
+  background-color: orange; /* Warna latar belakang */
+  border-radius: 95%; /* Membuat bentuk elips */
+  display: inline-table;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+}
+.rounded-rectangle {
+  width: 200px; /* Lebar persegi panjang */
+  height: 40px; /* Tinggi persegi panjang */
+  background-color: orange; /* Warna latar belakang */
+  border-radius: 10px; /* Sudut membulat kecil */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style untuk overlay latar belakang modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Efek gelap transparan */
+  display: none; /* Tersembunyi secara default */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style untuk konten modal */
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  width: 300px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Style tombol untuk menutup modal */
+.close-btn {
+  background-color: #f44336;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Menampilkan modal saat checkbox diaktifkan */
+#modal-toggle:checked + .modal-overlay {
+  display: flex; /* Modal tampil dengan layout flex */
+}
+
+/* Container Grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 kolom dalam satu baris */
+  gap: 20px; /* Jarak antar kotak */
+  padding: 20px; /* Padding pada container */
+}
+
+/* Kotak di dalam grid */
+.box {
+  background-color: RGB(205, 204, 0);
+  background-image: none;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Menjaga gambar dan teks terpusat */
+  justify-content: center;
+}
+
+/* Gambar di dalam kotak */
+.box img {
+  max-width: 100%; /* Membatasi ukuran gambar agar tidak melewati batas kotak */
+  height: auto;
+  border-radius: 8px; /* Sudut gambar melengkung */
+}
+
+/* Teks di bawah gambar */
+.box p {
+  margin-top: 10px; /* Jarak antara gambar dan teks */
+  font-size: 16px;
+  color: white;
+}
+
+.lined-heading {
+  color: grey;
+  background-color: grey;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  display: inline-block; /* Agar garis bisa menyesuaikan dengan lebar teks */
+}
+
+.lined-heading::before, .lined-heading::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 100px; /* Panjang garis */
+  height: 2px;
+  background-color: grey;
+}
+
+.lined-heading::before {
+  left: -60px; /* Jarak antara garis kiri dan teks */
+  transform: translateY(-50%);
+}
+
+.lined-heading::after {
+  right: -60px; /* Jarak antara garis kanan dan teks */
+  transform: translateY(-50%);
+}
+.row {
+  margin-right: 0;    /* Mengurangi margin di kanan */
+  margin-left: 0;     /* Mengurangi margin di kiri */
+}
+
+.col-6, .col-md-4 {
+  padding-left: 5px;  /* Mengurangi jarak kiri antar kolom */
+  padding-right: 5px; /* Mengurangi jarak kanan antar kolom */
+}
+
+
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+.col-6, .col-md-3 {
+  padding-right: 0;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+}
+
+.small-image {
+  display: block;
+  width: 100px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+.moving-image {
+  position: relative;
+  animation: move 10s linear infinite;
+}
+
+@keyframes move {
+  0% {
+      left: 100%;
+  }
+  100% {
+      left: -100%;
+  }
+}
+.bg-grey {
+  background-color: grey;
+}
+
+.bg-black {
+  background-color: black;
+}
