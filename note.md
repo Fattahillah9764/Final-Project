@@ -1,0 +1,1 @@
+Gagal saat eksekusi todos untuk bisa ditampilkan dan eksekusi (add). Karena di pages todos.html di <script src="../JS/index.js"></script>, bukan index.js, tetapi seharusnya ../JS/index.js

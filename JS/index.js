@@ -102,11 +102,12 @@ function deleteTodo (id) {
     todos = todos.filter(el => el.id !== Number(id))
 
     // console.log(todos, "==> RESULT DELETE");
-    if (todos.length) {
-        localStorage.setItem("todos", JSON.stringify(todos))
-    }else {
-        localStorage.removeItem("todos")
-    }
+    todos.length ? localStorage.setItem("todos", JSON.stringify(todos)) : localStorage.removeItem("todos")
+    // if (todos.length) {
+    //     localStorage.setItem("todos", JSON.stringify(todos))
+    // }else {
+    //     localStorage.removeItem("todos")
+    // }
 
     displayTodo()
 }

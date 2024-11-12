@@ -223,3 +223,113 @@
 .bg-black {
   background-color: black;
 }
+
+
+body {
+  background-color: lightblue;
+  margin: 0px;
+}
+
+p {
+  display: inline;
+  margin-right: 40px;
+}
+
+#navbar-custom {
+  text-align: right;
+  background-color: white;
+  padding: 0px 0px;
+}
+.detail-person h1{
+  display: inline;
+  margin: 30px;
+  margin-bottom: 0px;
+}
+.detail-person h4{
+  display: inline-flex;
+  margin: 30px;
+  margin-bottom: 0px;
+}
+.detail-person1 h4{
+  display: inline-flex;
+  text-align: right;
+  margin-bottom: 0px;
+}
+
+.header-style {
+  margin: auto;
+  width: 95%;              /* Lebar box */
+  height: 150px;             /* Tinggi box */
+  background-color: #f0f0f0; /* Warna latar belakang box */
+  border: 1px solid #333;    /* Border untuk box */
+  padding: 10px;             /* Padding untuk isi di dalam box */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  margin-top: 40px;
+}
+
+#box-form {
+  height: 290px;
+}
+
+#form-data {
+  background-color: white;
+  margin-top: 20px;
+}
+.tulisan-tengah{text-align: center;}
+
+#hp-menu{display: none;}
+
+@media only screen and(max-width:400px) 
+{
+  #hp-menu{display: inline;} 
+  #navbar-custom .p-web{display: none;}
+}
+.profile-card {display: block;}
+
+
+.row h4 {
+  padding: 20px 40px;
+}
+
+.container-fluid {
+  padding: 20px;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tiga kolom dengan lebar yang sama */
+  gap: 20px; /* Jarak antar kolom */
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Jarak antar elemen dalam kolom */
+  background-color: #f9f9f9;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.headline {
+  background-color: yellow;
+  font-size: 25px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.subheading {
+  font-size: 20px;
+}
+
+.detail {
+  font-size: 15px;
+  color: #666;
+}
+
+.footer {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
